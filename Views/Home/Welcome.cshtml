@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h1>Welcome to MARK</h1>
+<form id="nameForm">
+    <input type="text" id="userName" placeholder="Enter your name" required>
+    <button type="submit">Start</button>
+</form>
+
+<script>
+    document.getElementById('nameForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var name = document.getElementById('userName').value;
+        localStorage.setItem('userName', name);
+        window.location.href = '/Home/Index';
+    });
+</script>

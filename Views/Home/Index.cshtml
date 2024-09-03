@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Welcome, <span id="userNameDisplay"></span>!</h1>
+<a href="@Url.Action("Index", "Notes")">View Notes</a>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var userName = localStorage.getItem('userName');
+        if (userName) {
+            document.getElementById('userNameDisplay').textContent = userName;
+        } else {
+            window.location.href = '/Home/Welcome';
+        }
+    });
+</script>

@@ -1,0 +1,112 @@
+# Build output
+bin/
+obj/
+App_Data
+appsettings.json
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.dbmdl
+*.mdf
+*.ldf
+*.log
+*.nupkg
+*.snupkg
+*.suo
+*.pdb
+*.cache
+*.config
+*.csproj.user
+*.csproj.vspscc
+*.userprefs
+
+# Web-specific files
+wwwroot/node_modules/
+wwwroot/lib/
+
+# NuGet packages
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Entity Framework Migrations
+Migrations/
+
+# Azure App Service
+.terraform/
+.terraform.lock.hcl
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+.idea_modules/
+.idea.cache/
+.idea.modules/
+.idea/workspace.xml
+
+# Visual Studio Code
+.vscode/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+
+# Local History
+.localhistory/
+
+# Rider system folder
+.idea/
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mac files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.TemporaryItems
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk

@@ -1,0 +1,21 @@
+@using YourNamespace.Models
+@model List<Note>
+
+<h1>Your Notes</h1>
+
+<a href="@Url.Action("Create", "Notes")">Add New Note</a>
+
+<div id="notesList">
+    @foreach (var note in Model)
+    {
+        <div class="note-item">
+            <h2>@note.Title</h2>
+            <p>@note.Content.Substring(0, Math.Min(note.Content.Length, 100))...</p>
+            <a href="@Url.Action("Details", "Notes", new { id = note.Id })">Read More</a>
+            <a href="@Url.Action("Edit", "Notes", new { id = note.Id })">Edit</a>
+            <form asp-action="Delete" asp-route-id="@note.Id" method="post">
+                <button type="submit">Delete</button>
+            </form>
+        </div>
+    }
+</div>

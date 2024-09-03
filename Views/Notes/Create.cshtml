@@ -1,0 +1,15 @@
+@model YourNamespace.Models.Note
+
+<h1>Create New Note</h1>
+
+<form asp-action="Create">
+    <div>
+        <label asp-for="Title"></label>
+        <input asp-for="Title" required />
+    </div>
+    <div>
+        <label asp-for="Content"></label>
+        <textarea asp-for="Content" required></textarea>
+    </div>
+    <button type="submit">Save</button>
+</form>
